@@ -1,2 +1,36 @@
-/node_modules
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
 .env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads / user content
+uploads/
+uploads/*
+
+# Jest / cache
+jest.cache/
+.jest/
+.cache/
+
+# mongodb-memory-server (sometimes stores tmp files)
+mongodb-memory-server/
+
+
+# Ignore local key files, secrets etc
+*.key
+*.pem
+
