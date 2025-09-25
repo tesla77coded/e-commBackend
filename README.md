@@ -151,10 +151,21 @@ You can also explore the API using Postman. Import the provided collection file:
 
 - [`docs/postman_collection.json`](./docs/postman_collection.json)
 
-Or use the button below to open it directly in Postman:
 
+### Postman collection 
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://run.pstmn.io/open?collection_url=https://raw.githubusercontent.com/tesla77coded/e-commBackend/main/docs/postman_collection.json)
+Import the ready-made Postman collection:
+
+**Raw URL (copy this into Postman → Import → Link):**
+
+`https://raw.githubusercontent.com/tesla77coded/e-commBackend/main/docs/postman_collection.json`
+
+Steps:
+1. Open Postman (desktop or web).
+2. Click **Import** → **Link** (or paste into the URL box).
+3. Paste the raw URL above and click **Import**.
+4. In the imported collection, set the collection variable `baseUrl` to your server (e.g. `http://localhost:8080`) and copy your JWT into `{{token}}`.
+
 
 ---
 ## Contributing
