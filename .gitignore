@@ -1,36 +1,39 @@
-# Node
 node_modules/
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Environment
+# Environment files
 .env
 .env.local
-.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Logs
-logs/
+logs
 *.log
+*.log.*
 
-# OS
-.DS_Store
-Thumbs.db
 
-# Uploads / user content
+# Uploads (runtime generated files)
 uploads/
-uploads/*
 
-# Jest / cache
-jest.cache/
+# Jest cache
 .jest/
-.cache/
 
-# mongodb-memory-server (sometimes stores tmp files)
-mongodb-memory-server/
+# Editor / system files
+.DS_Store
+.idea/
+.vscode/
+*.swp
 
+# Build outputs
+dist/
+build/
 
-# Ignore local key files, secrets etc
-*.key
-*.pem
+# Generated API docs (ignore regenerated versions)
+public/swagger.json
+!docs/swagger.json
+!docs/postman_collection.json
 
+# Optional: if Postman collection is regenerated often
+#docs/postman_collection.json
