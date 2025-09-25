@@ -153,7 +153,8 @@ You can also explore the API using Postman. Import the provided collection file:
 
 Or use the button below to open it directly in Postman:
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/{{https://github.com/tesla77coded/e-commBackend.git}}/docs/postman_collection.json)
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://run.pstmn.io/open?collection_url=https://raw.githubusercontent.com/tesla77coded/e-commBackend/main/docs/postman_collection.json)
 
 ---
 ## Contributing
