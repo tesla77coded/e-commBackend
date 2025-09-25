@@ -26,8 +26,8 @@ A Node.js + Express + MongoDB backend for an e-commerce app. This repository inc
 ### Install
 
 ```bash
-git clone <your-repo-url>
-cd <repo>
+git clone https://github.com/tesla77coded/e-commBackend.git
+cd e-commBackend
 npm install
 ```
 
@@ -46,7 +46,6 @@ STRIPE_WEBHOOK_SECRET=whsec_xxx
 FRONTEND_URL=http://localhost:3000
 ```
 
-> **Important:** never commit `.env` to version control. Use `.env.example` to document required vars.
 
 ### Run in development
 
@@ -54,7 +53,7 @@ FRONTEND_URL=http://localhost:3000
 npm run dev
 ```
 
-This starts the Express app with `nodemon` (server entry `server.js`). For tests and CI the app is exported so it can be imported by Supertest without starting the HTTP listener.
+This starts the Express app with `nodemon` (server entry `server.js`). For tests the app is exported so it can be imported by Supertest without starting the HTTP listener.
 
 ---
 
