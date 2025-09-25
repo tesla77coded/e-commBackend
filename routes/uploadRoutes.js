@@ -1,3 +1,37 @@
+/**
+ * @swagger
+ * /api/uploads:
+ *   post:
+ *     summary: Upload an image file
+ *     tags:
+ *       - Uploads
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         multipart/form-data:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               image:
+ *                 type: string
+ *                 format: binary
+ *     responses:
+ *       200:
+ *         description: Image uploaded successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                 image:
+ *                   type: string
+ *       400:
+ *         $ref: '#/components/schemas/ErrorResponse'
+ */
+
+
 import path from 'path';
 import express from 'express';
 import multer from 'multer';
@@ -37,7 +71,7 @@ function checkFileType(file, cb) {
 
 const upload = multer({
   storage: storage,
-  fileFilter: function(req, file, cb) {
+  fileFilter: function (req, file, cb) {
     checkFileType(file, cb);
   },
   limits: { fileSize: 5 * 1024 * 1024 },
